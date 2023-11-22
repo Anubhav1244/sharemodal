@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="first_circle"></div>
+        <div class="second_circle"></div>
+        <div class="secondary_wrapper">
+            <div class="image">
+                <img height="155px" width="155px" src="Screenshot 2023-11-23 010123.png" alt="profile">
+            </div>
+            <div class="heading">
+                    <h2>Anubhav kumar</h2>
+            </div>
+            <h3>B-tech,Computer science</h3>
+            <div class="button">
+               
+                <button onclick="openmodel()"class="button_share">
+                    <i class="fa-solid fa-share"></i>
+                    Share my profile
+                </button>
+                <button onclick="document.location='https://auth.geeksforgeeks.org/user/shreyashk2vwn'"class="dsa_share">
+                    <i class="fa-solid fa-share"></i>
+                    
+                    DSA profile
+                </button>
+                <button onclick="openmodel1()"class="btn_follow">Follow me</button>
+
+            </div>
+        </div>
+        <div class="model_wrappper">
+            <div class="sec_heading">
+                <h1>Share My Profile</h1>
+                <i onclick="closemodel()" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="sub_heading_model">
+                <h3>share this via</h3>
+            </div>
+            <div class="links">
+                <a href="https://www.facebook.com/login/" class="icon" id="facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://twitter.com/i/flow/login" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/accounts/login/" class="icon" id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="https://web.whatsapp.com/" class="icon" id="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                  </a>
+                  <a href="https://web.telegram.org/k/" class="icon" id="telegram">
+                    <i class="fa-brands fa-telegram"></i>
+                  </a>
+            </div>
+        </div>
+        <div class="model_wrappper1">
+            <div class="sec_heading1">
+                <h1>Follow Me</h1>
+                <i onclick="closemodel1()" class="fa-solid fa-xmark close"></i>
+            </div>
+            <div class="sub_heading_model">
+                <h3>Follow me via</h3>
+            </div>
+            <div class="links">
+                <a href="https://in.linkedin.com/in/anubhav-kumar-40060b215" class="icon" id="Linked_in">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                  <a href="https://twitter.com/anubhav5231344" class="icon" id="twitter">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                 
+                 
+                  
+            </div>
+        </div>
+    </div>
+    <div class="overlay" onclick="closeModel()"></div>
+    <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+</body>
+</html>

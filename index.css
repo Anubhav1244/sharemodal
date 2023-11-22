@@ -1,0 +1,352 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.wrapper
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    
+
+}
+.first_circle
+{
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: animation_circle1 15s infinite;
+}
+@keyframes animation_circle1  {
+    50%{
+       transform: translateY(50px);
+        
+    }
+}
+.second_circle
+{
+    position: absolute;
+    bottom: 1%;
+    right: 20%;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg,#5648d8,#8641f4);
+    animation: animation_circle2 15s infinite;
+
+}
+@keyframes animation_circle2{
+    50%{
+        transform: translateX(25px);
+        
+    }
+}
+.secondary_wrapper
+{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    left: 45%;
+    top: 30%;
+    bottom: 30%;
+    border-left: 1px solid red;
+    border-right: 1px solid yellow;
+    border-bottom: 1px solid blue;
+    border-top: 1px solid green;
+    
+    /* background-color: #ffffff1a; */
+    height: 450px;
+    backdrop-filter: blur(15px);
+    translate: -50px -50px;
+    color: #ffffff;
+    padding: 20px 50px;
+    border-radius: 15px;
+}
+.image
+{
+    
+    border-radius: 50%;
+}
+.heading
+{
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+h3{
+    font-weight: 100;
+    color: #ffffff85;
+}
+.button
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+.button_share
+{
+    background-color:  #ffffff00;
+    padding: 5px;
+    border: 2px solid #ffffffb9;
+    border-radius: 5px;
+    display: flex;
+    color:#ffffffb9;
+    cursor: pointer;
+    gap: 5px;
+    font-size: medium;
+    font-weight: 100;
+}
+.button_share:hover
+{
+    background: #ffffffb9;
+    color: black;
+    font-weight: 100;
+}
+.dsa_share
+{
+    background-color:  #ffffff00;
+    padding: 5px;
+    border: 2px solid #ffffffb9;
+    border-radius: 5px;
+    display: flex;
+    color:#ffffffb9;
+    cursor: pointer;
+    gap: 5px;
+    font-size: medium;
+    font-weight: 100;
+}
+.dsa_share:hover
+{
+    background: #ffffffb9;
+    color: black;
+    font-weight: 100;
+}
+
+
+.btn_follow
+{
+    background-color:  #ffffff00;
+    padding: 5px;
+    border: 2px solid #ffffffb9;
+    border-radius: 5px;
+    color:#ffffffb9;
+    cursor: pointer;
+    gap: 5px;
+    font-size: medium;
+    font-weight: 100;
+}
+.btn_follow:hover
+{
+    background: #ffffffb9;
+    color: black;
+    font-weight: 100;
+}
+.model_wrappper
+{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #00000088;
+  border:2px solid #ffffff59;
+  color: white;
+  backdrop-filter: blur(10px);
+  padding: 20px 25px;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+  scale: 0;
+}
+.model_wrappper1
+{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: #00000088;
+  border:2px solid #ffffff59;
+  color: white;
+  backdrop-filter: blur(10px);
+  padding: 20px 25px;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: 1;
+  scale: 0;
+}
+.sec_heading
+{
+  display: flex;
+  border-bottom:2px solid #ffffff59;
+  padding-bottom: 12px;
+  gap: 150px;
+  font-size: 0.7em;
+  
+}
+.sec_heading1
+{
+  display: flex;
+  border-bottom:2px solid #ffffff59;
+  padding-bottom: 12px;
+  gap: 150px;
+  font-size: 0.7em;
+}
+.active
+{
+  scale: 1;
+}
+.fa-solid
+{
+   font-size: medium;
+}
+.links
+{
+  display: flex;
+  justify-content: space-evenly ;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.icon
+{
+  
+  padding: 17px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0px;
+  justify-content: center;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+#facebook
+{
+  border: 1px solid #1771e6;
+  color: #1771e6;
+}
+#facebook:hover{
+  background-color: #1771e6;
+  color: white;
+}
+#Linked_in
+{
+  border: 1px solid #1771e6;
+  color: #1771e6;
+}
+#Linked_in:hover
+{
+  background-color: #1771e6;
+  color: white;
+}
+#twitter
+{
+  border: 1px solid #1c99e6;
+  color: #1c99e6;
+}
+#twitter:hover{
+  background-color: #1c99e6;
+  color: white;
+}
+#instagram
+{
+  border: 1px solid #cb2770 ;
+  color: #cb2770;
+}
+#instagram:hover
+{
+  color:white;
+  background-color: #d84869;
+}
+#whatsapp
+{
+  border: 1px solid #2fe664;
+  color: #2fe664;
+}
+#whatsapp:hover{
+  color: white;
+  background-color: #2fe664;
+}
+#telegram
+{
+  border: 1px solid #0081c2;
+  color: #0081c2;
+}
+#telegram:hover{
+  color: white;
+  background-color: #0081c2;
+}
+.overlay {
+  position: fixed;
+  background-color: #5f5f5f83;
+  top: 0;
+  opacity: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  pointer-events: none;
+  transition: 0.5s ease-in-out;
+}
+.overlayactive
+{
+  opacity: 1;
+  pointer-events: initial;
+}
+@media (max-width: 850px) {
+    .secondary_wrapper {
+      max-width: 250px;
+      width: 300px;
+    }
+    .button {
+      flex-direction: column;
+    }
+    .model_wrappper {
+      width: 70vw;
+    }
+  }
+  @media (max-width: 400px) {
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .secondary_wrapper {
+      position: static;
+      top: 0;
+      left: 0;
+      translate: 0 0;
+      margin: 0 12px;
+      padding: 0 10px;
+    }
+    .secondary_wrapper div img {
+      width: 120px;
+      height: 120px;
+    }
+    .heading h2 {
+      font-size: 1.3rem;
+    }
+    .model_wrappper {
+      width: 80vw;
+    }
+  }
